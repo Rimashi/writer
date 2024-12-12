@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lblue_grey"
+    android:orientation="vertical"
+    tools:context=".notes_taker">
+
+    <Toolbar
+        android:id="@+id/toolbar_note"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/app_name"
+        android:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_save"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/baseline_save_24" />
+        </RelativeLayout>
+    </Toolbar>
+
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title: "
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note: "
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+</LinearLayout>
